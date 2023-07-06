@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="w-[375px] mx-auto bg-bgVeryDarkBlue md:w-[1440px]">
+    <div
+      class="container mt-32 mb-5 bg-cardVeryDarkBlue p-5 rounded-xl md:w-72 md:mx-auto md:mt-36 md:mb-10 relative"
+    >
+      <img
+        src="images/image-equilibrium.jpg"
+        alt="image-equilibrium"
+        class="rounded-xl w-full mb-5 hover:cursor-pointer hover:opacity-30"
+      />
+      <div
+        class="card w-[18.3rem] h-[18.3rem] md:w-[15.5rem] md:h-[15.5rem] rounded-lg hover:bg-cyan/50 absolute top-5 cursor-pointer flex group"
+      >
+        <img
+          src="images/icon-view.svg"
+          alt="icon-view"
+          class="m-auto hidden group-hover:block"
+        />
+      </div>
+      <h1
+        class="text-xl font-bold mb-3 md:text-lg w-2/3 hover:text-cyan cursor-pointer transition ease-in-out"
+      >
+        Equilibrium #3429
+      </h1>
+      <p class="text-softBlue mb-3 font-thin md:text-sm md:mb-5">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="flex justify-between mb-2 md:mb-4">
+        <p class="flex gap-2">
+          <img
+            src="images/icon-ethereum.svg"
+            alt="icon-ethereum"
+            class="w-3 h-5 md:w-2.5 md:h-4"
+          />
+          <span class="text-cyan font-semibold md:text-sm">0.041 ETH</span>
+        </p>
+        <p class="flex gap-1">
+          <img
+            src="images/icon-clock.svg"
+            alt="icon-clock"
+            class="w-5 h-5 md:w-4 md:h-4"
+          />
+          <span class="text-softBlue md:text-sm">3 days left</span>
+        </p>
+      </div>
+      <div class="bg-lineveryDarkBlue w-full h-[1px]"></div>
+      <div class="flex items-center mt-3 gap-5 md:gap-4">
+        <img
+          src="images/image-avatar.png"
+          alt="image-avatar"
+          class="w-8 ring-1 md:w-7 ring-white rounded-full"
+        />
+        <p class="text-sm md:text-xs text-softBlue font-semibold">
+          Creation of
+          <span class="text-white hover:text-cyan">Jules Wyvern</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
